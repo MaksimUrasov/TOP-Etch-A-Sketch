@@ -3,10 +3,38 @@
     <head>
     <title>ETCH A SKETCH</title>
     <link rel="stylesheet" href="styles.css">
-    
     </head>
     <body>
+                
+        <div id="main">
+        </div>
+
+        <div id="optionsMenu" >
+            <div class="menuItem">
+                <p>Clear and set the new grid</p>
+                    <button id="button" onclick="setNewGrid()" class="btn-green">
+                    <img class="icon" src="https://htmlacademy.ru/assets/icons/reload-6x-white.png">
+                </button>
+            </div>
+
+            <div class="menuItem" id="colorBox">
+                <form>
+                    <p>Pick a color</p>
+                    <input type="color" id="color" name="color">
+                </form>
+            </div>
+
+            <div class="menuItem" id="switchBox">
+                <p>Board shape: Fit / Square </p> 
+                <label class="switch">
+                    <input id="sliderInput" type="checkbox" oninput="changeSquereToFit()">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
         
-    <script src="script.js"></script>
+        
+    
     </body>
+    <script src="script.js"></script>
 </html> 
