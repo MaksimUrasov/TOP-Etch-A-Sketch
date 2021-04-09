@@ -25,6 +25,7 @@ function addDivs(sideLength) {
 function setTheCells() { 
     allNewDivNodes = mainDivNode.querySelectorAll("div");
     allNewDivNodes.forEach( (e)=> { e.addEventListener("mouseover", onMouseOverEvent ); e.style.opacity = "0" } )
+    allNewDivNodes.forEach( (e)=> { e.addEventListener("touchmove", onMouseOverEvent ); e.style.opacity = "0" } )
 }
 
 
